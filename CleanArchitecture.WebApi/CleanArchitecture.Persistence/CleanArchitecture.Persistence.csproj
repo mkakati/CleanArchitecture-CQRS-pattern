@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200203093437_db.cs" />
+    <Compile Remove="Migrations\20200203093437_db.Designer.cs" />
+    <Compile Remove="Migrations\20200203093729_DbCreate1.cs" />
+    <Compile Remove="Migrations\20200203093729_DbCreate1.Designer.cs" />
+    <Compile Remove="Migrations\20200203094219_add.cs" />
+    <Compile Remove="Migrations\20200203094219_add.Designer.cs" />
+    <Compile Remove="Migrations\20200203094318_add.cs" />
+    <Compile Remove="Migrations\20200203094318_add.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
